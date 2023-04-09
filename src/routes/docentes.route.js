@@ -4,8 +4,8 @@ const docentesController = require('../controllers/docentes.controller')
 const router = express.Router()
 
 router.get('/', docentesController.getAllDocentes)
-router.get('/:dni', docentesController.getDocenteByDni)
-router.delete('/:dni', docentesController.deleteDocenteByDni)
+router.get('/:legajo', docentesController.getDocenteByLegajo)
+router.delete('/:legajo', docentesController.deleteDocenteByLegajo)
 router.post('/', docentesController.createDocente)
 //router.put('/:dni', docentesController.updateDocente )
 
